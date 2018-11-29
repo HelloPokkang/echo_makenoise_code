@@ -10,12 +10,13 @@
 				<div class="background-hero" style="position: absolute; top:10%; left:15%; right:15%; z-index: 3; color:white; height: 500px; padding: 2rem; box-shadow: -7px 20px 45px -1px rgba(0,0,0,0.15);
 ">
 					<div style="width: 50%">
-						<span class="title is-2" style="color:white; font-family: 'Prompt', sans-serif;">ECHO คือแหล่งรวมช่างภาพที่มีคุณภาพ ให้ผู้ว่าจ้างเข้ามาค้นหาช่างภาพที่มีตั้งแต่ระดับฝึกหัดจนถึงระดับมืออาชีพ</span>
+						<span class="title is-2" style="color:white; font-family: 'Prompt', sans-serif;">ECHO
+							คือแหล่งรวมช่างภาพที่มีคุณภาพแห่งใหม่ของประเทศไทย </span>
 						<hr style="background-color:#FCC842">
 						<p style="font-family: 'Bai Jamjuree', sans-serif;">
-							โดยมีช่างภาพหลากหลายรูปแบบ ให้สามารถค้นหาคนที่มีผลงานตรงใจ ทั้งสไตล์รูป ราคา วันเวลา สถานที่ได้อย่างง่ายๆ อีกทั้งยังสามารถค้นหาตากล้องที่อยู่ในวงเพื่อน เพื่อเพิ่มความไว้วางใจให้กับผู้ว่าจ้าง พร้อมมีรีวิวให้ได้พิจารณาก่อนเลือกจ้าง อำนวยความสะดวกให้กับทั้งช่างภาพและผู้ว่าจ้าง เพื่อให้งานที่จะเกิดขึ้นนั้นเกิดความประทับใจสูงสุด
+							สร้างความเป็นระบบให้กับการเป็นช่างภาพ รวมถึงการจ้างงานและหางาน โดยที่เราช่วยอำนวยความสะดวกให้กับทั้งช่างภาพและผู้ว่าจ้าง เพื่อให้งานที่จะเกิดขึ้นนั้นเกิดความประทับใจสูงสุด
 						</p>
-						<div style="padding-top:1rem;">
+						<div style="padding-top:3rem;">
 							<button @click="scrollDown('Photographer')" class="button" style="font-family: 'Bai Jamjuree', sans-serif;">สมัครเป็นช่างภาพ</button>
 							<button @click="scrollDown('Customer')" class="button" style="font-family: 'Bai Jamjuree', sans-serif;">ต้องการหาช่างภาพ</button>
 						</div>
@@ -52,13 +53,13 @@
 				<div class="columns">
 					<div class="column">
 						<div>
-							<img style="display: block; height:300px; width:100%" :src="require('./assets/profit/photographer'+ photographerImgPath +'.jpg')" alt="">
+							<img style="display: block; height:350px; width:100%" :src="require('./assets/profit/photographer'+ photographerImgPath +'.jpg')" alt="">
 						</div>
 					</div>
-					<div class="column" style="font-family: 'Bai Jamjuree', sans-serif; ">
-						<tr style="font-family: 'Prompt', sans-serif; height: 3rem">
-							<p class="title is-4">สำหรับช่างภาพ</p>
-
+					<div class="column" style="font-family: 'Bai Jamjuree', sans-serif; height: 400px">
+						<tr style="height: 3rem">
+							<p style="font-family: 'Prompt', sans-serif; " class="title is-4">สำหรับช่างภาพ</p>
+							<!-- ให้ผู้ว่าจ้างเข้ามาค้นหาช่างภาพที่มีตั้งแต่ระดับฝึกหัดจนถึงระดับมืออาชีพ -->
 						</tr>
 						<div class="feature_div" :class="{feature_highlight: photographerImgPath == 1 ? true : false}">
 							<tr @mouseover="featureHover('photographer', 1)">
@@ -68,7 +69,7 @@
 									</div>
 								</td>
 								<td>
-									<span> <strong>Match</strong> ให้ลูกค้าที่อยากค้นหาคุณเจอง่ายและเร็วยิ่งขึ้น </span>
+									<span> <strong>Match</strong> ทำให้การจ้างงานเป็นระบบ เพื่อลดการเสียโอกาสในการได้งาน ให้ลูกค้าที่อยากค้นหาคุณเจอง่ายและเร็วยิ่งขึ้น</span>
 								</td>
 							</tr>
 						</div>
@@ -80,7 +81,7 @@
 									</div>
 								</td>
 								<td>
-									<span> <strong>Team</strong> คุณรับงานสเกลใหญ่ขึ้นได้ โดยคุณสามารถค้นหาทีมงานตามที่ต้องการ ได้ </span>
+									<span> <strong>Team</strong> คุณรับงานสเกลใหญ่ขึ้นได้ โดยที่คุณสามารถค้นหาทีมงานตามที่ต้องการ และจัดระบบทีมได้อย่างง่ายๆ </span>
 								</td>
 							</tr>
 						</div>
@@ -92,7 +93,7 @@
 									</div>
 								</td>
 								<td>
-									<span> <strong>Practice</strong> ตากล้องฝึกหัด เลือกสามารถรับงานเพื่อเพิ่มประสบการณ์ใหม่ๆ จากงานจริง </span>
+									<span> <strong>Practice</strong> สำหรับช่างภาพฝึกหัด สามารถเลือกรับงานรูปแบบใหม่เพื่อเพิ่มประสบการณ์จากงานจริงให้กับตัวคุณเอง โดยไม่เสียค่าใช้จ่าย </span>
 								</td>
 							</tr>
 						</div>
@@ -103,9 +104,9 @@
 			<div id="customer-features" style="background-color:#DEF7F3; padding:2rem 5rem 2rem 5rem">
 				<div class="columns is-centered">
 					<div class="column" style="font-family: 'Bai Jamjuree', sans-serif;">
-						<tr style="font-family: 'Prompt', sans-serif; height: 3rem">
-							<p class="title is-4">สำหรับผู้ว่างจ้าง</p>
-
+						<tr style=" height: 3rem">
+							<p style="font-family: 'Prompt', sans-serif;" class="title is-4">สำหรับผู้ว่างจ้าง</p>
+							<!-- ให้ผู้ว่าจ้างเข้ามาค้นหาช่างภาพที่มีตั้งแต่ระดับฝึกหัดจนถึงระดับมืออาชีพ -->
 						</tr>
 						<div class="feature_div2" :class="{feature_highlight2: customerImgPath == 1 ? true : false}">
 							<tr @mouseover="featureHover('customer', 1)">
@@ -115,7 +116,7 @@
 									</div>
 								</td>
 								<td>
-									<span> <strong>Search</strong> เราเปิดให้คุณเข้ามามองหาตากล้อง และเจอคนที่มีผลงานตรงใจ ทั้ง รูป สไตล์รูป ราคา วันเวลา สถานที่ได้อย่างง่ายๆ </span>
+									<span> <strong>Search</strong> ให้คุณเข้ามาค้นหาช่างภาพที่มีตั้งแต่ระดับฝึกหัดจนถึงระดับมืออาชีพ และเจอคนที่มีผลงานตรงใจ ทั้ง รูป สไตล์รูป ราคา วันเวลา สถานที่ได้อย่างง่ายๆ </span>
 								</td>
 							</tr>
 
@@ -128,7 +129,7 @@
 									</div>
 								</td>
 								<td>
-									<span> <strong>Network</strong> คุณสามารถค้นหาตากล้องที่อยู่ในวงเพื่อนได้ เช่นคนที่เพื่อนเคยจ้าง หรือเพื่อนของเพื่อน เพื่อเพิ่มความไว้วางใจและความสบายใจให้กับคุณ </span>
+									<span> <strong>Network</strong> เพื่อเพิ่มความไว้วางใจและความสบายใจให้กับคุณ คุณสามารถค้นหาช่างภาพที่อยู่ในวงเพื่อนได้ เช่นคนที่เพื่อนเคยจ้าง หรือเพื่อนของเพื่อน </span>
 								</td>
 							</tr>
 						</div>
@@ -147,7 +148,7 @@
 					</div>
 					<div class="column ">
 						<div>
-							<img style="display: block; height:300px; width:100%" :src="require('./assets/profit/customer'+ customerImgPath +'.jpg')" alt="">
+							<img style="display: block; height:350px; width:100%" :src="require('./assets/profit/customer'+ customerImgPath +'.jpg')" alt="">
 						</div>
 					</div>
 				</div>
@@ -345,21 +346,36 @@
         </div>
       </div> -->
 
-			<div style="padding:4rem">
+			<div style="padding:3rem 4rem 4rem 4rem">
+				<div style="font-family: 'Prompt', sans-serif; height: 30px; text-align: center; width 100%">
+					<p class="title is-4"> หมวดหมู่การจ้างงาน</p>
+				</div>
 				<div class="tile is-ancestor">
-					<div class="tile is-parent" style="padding:0; margin:1rem">
-						<div class="tile test is-shady" style="height:100%; width: 100px"></div>
+					<div class="tile is-parent" style="padding:0; margin:1rem 0 1rem 1rem">
+						<div class="tile test" style="height:100%; width: 100px">
+							<img style="display: block;max-height: 100%; cursor:pointer" class="fit is-shady" :src="require('./assets/product/food.jpg')">
+							<!-- <div style="position: absolute; max-height: 100%; background-color: black; opacity: 0.8; ">FOOD</div> -->
+
+						</div>
 					</div>
 					<div class="tile is-parent" style="padding:0; margin:1rem">
-						<div class="tile test is-shady" style="height:100%; width: 100px"></div>
+						<div class="tile test " style="height:100%; width: 100px">
+							<img style="display: block;max-height: 100%; cursor:pointer" class="fit is-shady" :src="require('./assets/product/wedding.jpg')">
+						</div>
 					</div>
 					<div class="tile is-parent is-vertical" style="padding:0">
 						<div class="tile is-parent" style="padding:0">
-							<div class="tile test is-shady" style="margin:1rem 1rem 1rem 0"></div>
-							<div class="tile test is-shady" style="margin:1rem 1rem 1rem 0"></div>
+							<div class="tile test " style="margin:1rem 1rem 1rem 0">
+								<img style="display: block;max-height: 100%; cursor:pointer" class="fit is-shady" :src="require('./assets/product/product.jpg')">
+							</div>
+							<div class="tile test " style="margin:1rem 1rem 1rem 0">
+								<img style="display: block;max-height: 100%; cursor:pointer" class="fit is-shady" :src="require('./assets/product/architecture.jpg')">
+							</div>
 						</div>
 						<div class="tile is-parent" style="padding:0">
-							<div class="tile test is-shady" style="margin:0 1rem 1rem 0"></div>
+							<div class="tile test " style="margin:0 1rem 1rem 0">
+								<img style="display: block;max-height: 100%; cursor:pointer" class="fit is-shady" :src="require('./assets/product/graduation.jpg')">
+							</div>
 						</div>
 					</div>
 				</div>
@@ -675,7 +691,7 @@ tr {
 }
 
 .feature_div2 {
-	padding: 1rem 2rem 1rem 2rem;
+	padding: 0rem 2rem 0rem 2rem;
 	border-radius: 10px;
 }
 
