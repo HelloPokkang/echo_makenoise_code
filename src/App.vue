@@ -9,14 +9,14 @@
 				<!-- <div style="position: absolute; z-index:2; height: 75%; width:100%; background-color: black; opacity: 0.5;"></div> -->
 				<div class="background-hero" style="position: absolute; top:10%; left:15%; right:15%; z-index: 3; color:white; height: 500px; padding: 2rem; box-shadow: -7px 20px 45px -1px rgba(0,0,0,0.15);
 ">
-					<div style="width: 50%">
+					<div style="width: 51%; padding-top: 3rem">
 						<span class="title is-2" style="color:white; font-family: 'Prompt', sans-serif;">ECHO
 							คือแหล่งรวมช่างภาพที่มีคุณภาพแห่งใหม่ของประเทศไทย </span>
 						<hr style="background-color:#FCC842">
 						<p style="font-family: 'Bai Jamjuree', sans-serif;">
 							สร้างความเป็นระบบให้กับการเป็นช่างภาพ รวมถึงการจ้างงานและหางาน โดยที่เราช่วยอำนวยความสะดวกให้กับทั้งช่างภาพและผู้ว่าจ้าง เพื่อให้งานที่จะเกิดขึ้นนั้นเกิดความประทับใจสูงสุด
 						</p>
-						<div style="padding-top:3rem;">
+						<div style="padding-top:2rem;">
 							<button @click="scrollDown('Photographer')" class="button" style="font-family: 'Bai Jamjuree', sans-serif;">สมัครเป็นช่างภาพ</button>
 							<button @click="scrollDown('Customer')" class="button" style="font-family: 'Bai Jamjuree', sans-serif;">ต้องการหาช่างภาพ</button>
 						</div>
