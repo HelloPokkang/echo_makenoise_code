@@ -2,52 +2,127 @@
 	<div>
 		<!-- style="padding:5rem 8rem 3rem 8rem;" -->
 		<div>
-			<div id="nav">
-				<!-- <div style="padding: 3rem"></div> -->
-			</div>
-			<section class="background-hero" id="hero" style=" text-align: center; height: 700px; overflow:hidden">
-				<!-- <div style="position: absolute; z-index:2; height: 75%; width:100%; background-color: black; opacity: 0.5;"></div> -->
-				<div class="background-hero" style="position: absolute; top:10%; left:15%; right:15%; z-index: 3; color:white; height: 500px; padding: 2rem; box-shadow: -7px 20px 45px -1px rgba(0,0,0,0.15);
-">
-					<div style="width: 51%; padding-top: 3rem">
-						<span class="title is-2" style="color:white; font-family: 'Prompt', sans-serif;">ECHO
-							คือแหล่งรวมช่างภาพที่มีคุณภาพแห่งใหม่ของประเทศไทย </span>
-						<hr style="background-color:#FCC842">
-						<p style="font-family: 'Bai Jamjuree', sans-serif;">
-							สร้างความเป็นระบบให้กับการเป็นช่างภาพ รวมถึงการจ้างงานและหางาน โดยที่เราช่วยอำนวยความสะดวกให้กับทั้งช่างภาพและผู้ว่าจ้าง เพื่อให้งานที่จะเกิดขึ้นนั้นเกิดความประทับใจสูงสุด
-						</p>
-						<div style="padding-top:2rem;">
-							<button @click="scrollDown('Photographer')" class="button" style="font-family: 'Bai Jamjuree', sans-serif;">สมัครเป็นช่างภาพ</button>
-							<button @click="scrollDown('Customer')" class="button" style="font-family: 'Bai Jamjuree', sans-serif;">ต้องการหาช่างภาพ</button>
+			<section class="hero is-info is-fullheight">
+				<div class="hero-head">
+					<nav class="navbar">
+						<div class="container">
+							<div class="navbar-brand">
+								<span style="margin:10px; font-size:2rem; color:#47CCFB; font-family: 'Prompt', sans-serif;">
+									ECHO
+								</span>
+								<!-- <a class="navbar-item" href="../">
+									<img src="http://bulma.io/images/bulma-type-white.png" alt="Logo">
+								</a> -->
+								<span class="navbar-burger burger" data-target="navbarMenu">
+									<span></span>
+									<span></span>
+									<span></span>
+								</span>
+							</div>
+							<div id="navbarMenu" class="navbar-menu">
+								<!-- <div class="navbar-end">
+									<span class="navbar-item">
+										<a class="button is-white is-outlined" href="#">
+											<span class="icon">
+												<i class="fa fa-home"></i>
+											</span>
+											<span>Home</span>
+										</a>
+									</span>
+									<span class="navbar-item">
+										<a class="button is-white is-outlined" href="#">
+											<span class="icon">
+												<i class="fa fa-superpowers"></i>
+											</span>
+											<span>Examples</span>
+										</a>
+									</span>
+									<span class="navbar-item">
+										<a class="button is-white is-outlined" href="#">
+											<span class="icon">
+												<i class="fa fa-book"></i>
+											</span>
+											<span>Documentation</span>
+										</a>
+									</span>
+									<span class="navbar-item">
+										<a class="button is-white is-outlined" href="https://github.com/dansup/bulma-templates/blob/master/templates/landing.html">
+											<span class="icon">
+												<i class="fa fa-github"></i>
+											</span>
+											<span>View Source</span>
+										</a>
+									</span>
+								</div> -->
+							</div>
 						</div>
-					</div>
-
+					</nav>
 				</div>
 
-				<!-- <carousel
-          :autoplayTimeout="3000"
-          :paginationEnabled="false"
-          :navigationEnabled="false"
-          :loop="true"
-          :autoplay="true"
-          :perPage="1"
-          style="width: 100%;"
-        >
-          <slide
-            v-for="(img, index) in 4"
-            :key="index"
-          >
-            <div class="img-bg">
-              <img
-                style="display: block;max-height: 100%; max-height:85vh; min-height:85vh;"
-                class="fit"
-                :src="'src/assets/featured/jakkrit/jakkrit_'+ (index) +'.jpg'"
-                alt=""
-              >
-            </div>
-          </slide>
-        </carousel> -->
+				<div class="hero-body">
+					<div class="container has-text-centered">
+						<div class="column is-8 is-offset-2">
+							<span class="title is-1" style="font-size:5rem; color:#47CCFB; font-family: 'Prompt', sans-serif;">
+								ECHO
+							</span>
+							<span style="font-size: 2rem; font-family: 'Bai Jamjuree', sans-serif; color:white">we're coming Soon</span><br>
+							<hr>
+							<span class="title is-2" style="color:white; font-family: 'Bai Jamjuree', sans-serif;">
+								แหล่งรวมช่างภาพแห่งใหม่ของประเทศไทย
+							</span>
+
+							<p style="font-size:1.5rem; font-family: 'Bai Jamjuree', sans-serif; color:white; margin-top:2rem">
+								สร้างความเป็นระบบให้กับการเป็นช่างภาพ รวมถึงการจ้างงานและหางาน โดยที่เราช่วยอำนวยความสะดวกให้กับทั้งช่างภาพและผู้ว่าจ้าง เพื่อให้งานที่จะเกิดขึ้นนั้นเกิดความประทับใจสูงสุด
+							</p>
+							<div style="padding-top:2rem;">
+								<button @click="scrollDown('Photographer')" class="button white" style="font-family: 'Bai Jamjuree', sans-serif;">สมัครเป็นช่างภาพ</button>
+								<button @click="scrollDown('Customer')" class="button white" style="font-family: 'Bai Jamjuree', sans-serif;">ต้องการหาช่างภาพ</button>
+							</div>
+
+							<div style="margin-top:5rem" class="bounce">
+								<span class="icon" style="cursor:pointer" @click="scrollDownFeatures()">
+									<i class="fa fa-angle-double-down fa-3x"></i>
+								</span>
+							</div>
+							<!-- <div class="box">
+								<div class="field is-grouped">
+									<p class="control is-expanded">
+										<input class="input" type="text" placeholder="Enter your email">
+									</p>
+									<p class="control">
+										<a class="button is-info">
+											Notify Me
+										</a>
+									</p>
+								</div>
+							</div> -->
+						</div>
+					</div>
+				</div>
+
 			</section>
+
+			<!-- <div id="nav">
+			</div> -->
+			<!-- <section class="background-hero" id="hero" style=" text-align: center; height: 700px; overflow:hidden">
+				<div style="position: absolute; z-index:2; height: 75%; width:100%; background-color: black; opacity: 0.5;"></div>
+				<div class="background-hero" style="position: absolute; top:10%; left:15%; right:15%; z-index: 3; color:white; height: 500px; padding: 2rem; box-shadow: -7px 20px 45px -1px rgba(0,0,0,0.15);">
+
+				<div style="width: 51%; padding-top: 3rem">
+					<span class="title is-1" style="color:#47CCFB; font-family: 'Prompt', sans-serif;">ECHO</span> <br>
+					<span class="title is-2" style="color:white; font-family: 'Prompt', sans-serif;">
+						แหล่งรวมช่างภาพแห่งใหม่ของประเทศไทย
+					</span>
+					<hr style="background-color:#FCC842">
+					<p style="font-family: 'Bai Jamjuree', sans-serif; color:white">
+						สร้างความเป็นระบบให้กับการเป็นช่างภาพ รวมถึงการจ้างงานและหางาน โดยที่เราช่วยอำนวยความสะดวกให้กับทั้งช่างภาพและผู้ว่าจ้าง เพื่อให้งานที่จะเกิดขึ้นนั้นเกิดความประทับใจสูงสุด
+					</p>
+					<div style="padding-top:2rem;">
+						<button @click="scrollDown('Photographer')" class="button" style="font-family: 'Bai Jamjuree', sans-serif;">สมัครเป็นช่างภาพ</button>
+						<button @click="scrollDown('Customer')" class="button" style="font-family: 'Bai Jamjuree', sans-serif;">ต้องการหาช่างภาพ</button>
+					</div>
+				</div>
+			</section> -->
 
 			<div id="photog-features" style="padding:2rem 5rem 2rem 5rem">
 				<div class="columns">
@@ -81,7 +156,7 @@
 									</div>
 								</td>
 								<td>
-									<span> <strong>Team</strong> คุณรับงานสเกลใหญ่ขึ้นได้ โดยที่คุณสามารถค้นหาทีมงานตามที่ต้องการ และจัดระบบทีมได้อย่างง่ายๆ </span>
+									<span> <strong>Team</strong> ลดการเสียโอกาสในการได้งาน โดยที่คุณสามารถสร้างทีมงานของตนเอง และมีโอกาสฝึกฝนจากประสบการณ์จริง </span>
 								</td>
 							</tr>
 						</div>
@@ -93,7 +168,7 @@
 									</div>
 								</td>
 								<td>
-									<span> <strong>Practice</strong> สำหรับช่างภาพฝึกหัด สามารถเลือกรับงานรูปแบบใหม่เพื่อเพิ่มประสบการณ์จากงานจริงให้กับตัวคุณเอง โดยไม่เสียค่าใช้จ่าย </span>
+									<span> <strong>Practice</strong> ช่วยเพิ่มประสบการณ์ใหม่ เพื่องานที่หลากหลาย </span>
 								</td>
 							</tr>
 						</div>
@@ -116,7 +191,7 @@
 									</div>
 								</td>
 								<td>
-									<span> <strong>Search</strong> ให้คุณเข้ามาค้นหาช่างภาพที่มีตั้งแต่ระดับฝึกหัดจนถึงระดับมืออาชีพ และเจอคนที่มีผลงานตรงใจ ทั้ง รูป สไตล์รูป ราคา วันเวลา สถานที่ได้อย่างง่ายๆ </span>
+									<span> <strong>Search</strong> ค้นหาคนที่ตรงใจที่มาพร้อมความสบายใจ </span>
 								</td>
 							</tr>
 
@@ -129,7 +204,7 @@
 									</div>
 								</td>
 								<td>
-									<span> <strong>Network</strong> เพื่อเพิ่มความไว้วางใจและความสบายใจให้กับคุณ คุณสามารถค้นหาช่างภาพที่อยู่ในวงเพื่อนได้ เช่นคนที่เพื่อนเคยจ้าง หรือเพื่อนของเพื่อน </span>
+									<span> <strong>Network</strong> สร้างความอุ่นใจในการจ้างงานด้วย Network ของเพื่อน พร้อมมีรีวิวจากผู้จ้างจริง </span>
 								</td>
 							</tr>
 						</div>
@@ -440,7 +515,7 @@
 								<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ab6de5e76dce12d5da3c23b3f_0c333339cc" tabindex="-1" value=""></div>
 
 								<div class="clear" style="padding:2rem">
-									<input type="submit" value="ลงทะเบียน" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: 'Bai Jamjuree', sans-serif; padding-left:2rem; padding-right:2rem"></div>
+									<input type="submit" value="ลงทะเบียน" name="subscribe" id="mc-embedded-subscribe" class="button white" style=" border-color: #FAC65B; font-size:1.25rem; width:100%; font-family: 'Bai Jamjuree', sans-serif; padding-left:2rem; padding-right:2rem"></div>
 							</div>
 						</form>
 					</div>
@@ -449,6 +524,9 @@
 			</div>
 
 			<section>
+				<!-- <div class="has-text-centered" style="margin:0; width:100%; background-color:#222B22">
+					<span style="color:white">Our Photographers</span>
+				</div> -->
 				<carousel :autoplayTimeout="3000" :paginationEnabled="false" :navigationEnabled="false" :loop="true" :autoplay="true" :perPage="6" style="width: 100%;">
 					<slide v-for="(photo, index) in photographers" :key="index">
 						<div class="img-bg">
@@ -457,6 +535,9 @@
 						</div>
 					</slide>
 				</carousel>
+				<!-- <div class="has-text-centered" style="margin:0; width:100%; background-color:#222B22">
+					<span style="color:white">Our Photographers</span>
+				</div> -->
 			</section>
 		</div>
 
@@ -472,7 +553,12 @@
 					<span>makenoiseproduction@outlook.com</span>
 				</div>
 				<div class="column">
-
+					<a style="color: #525252" class="button is-outlined" href="https://www.facebook.com/echobymakenoise">
+						<span class="icon">
+							<i class="fa fa-facebook-square"></i>
+						</span>
+						<span>Facebook</span>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -525,6 +611,9 @@ export default {
 			this.type = type;
 			this.$scrollTo("#signup");
 		},
+		scrollDownFeatures() {
+			this.$scrollTo("#photog-features");
+		},
 		goToLink(url) {
 			window.open(url, "_blank");
 		},
@@ -560,16 +649,49 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+html,
+body {
+	font-family: "Open Sans", serif;
+}
+.hero.is-info {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("./assets/hero3.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.hero .nav,
+.hero.is-success .nav {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.hero .subtitle {
+	padding: 3rem 0;
+	line-height: 1.5;
+}
+
 @import url("https://fonts.googleapis.com/css?family=Bai+Jamjuree|Prompt");
-.button {
+.button.white {
 	border-color: white;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-bottom: 1rem;
+	width: 200px;
+	margin: 3px;
+}
+
+.button.white:hover {
+	border-color: white;
+	background-color: #fac65b;
+	color: white;
 	padding-left: 1rem;
 	padding-right: 1rem;
 	padding-bottom: 1rem;
 }
 
 .background-hero {
-	background-image: url("./assets/hero2.jpg");
+	background-image: url("./assets/hero3.jpg");
 	background-size: 100% 100%;
 	width: auto;
 	/* height: ; */
@@ -713,5 +835,76 @@ td {
 strong {
 	color: #20406f;
 	font-size: larger;
+}
+
+.downArrow {
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+}
+.bounce {
+	-moz-animation: bounce 3s infinite;
+	-webkit-animation: bounce 3s infinite;
+	animation: bounce 3s infinite;
+}
+@-moz-keyframes bounce {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		-moz-transform: translateY(0);
+		transform: translateY(0);
+	}
+	40% {
+		-moz-transform: translateY(-30px);
+		transform: translateY(-30px);
+	}
+	60% {
+		-moz-transform: translateY(-15px);
+		transform: translateY(-15px);
+	}
+}
+@-webkit-keyframes bounce {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+	40% {
+		-webkit-transform: translateY(-30px);
+		transform: translateY(-30px);
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		transform: translateY(-15px);
+	}
+}
+@keyframes bounce {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		-moz-transform: translateY(0);
+		-ms-transform: translateY(0);
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+	40% {
+		-moz-transform: translateY(-30px);
+		-ms-transform: translateY(-30px);
+		-webkit-transform: translateY(-30px);
+		transform: translateY(-30px);
+	}
+	60% {
+		-moz-transform: translateY(-15px);
+		-ms-transform: translateY(-15px);
+		-webkit-transform: translateY(-15px);
+		transform: translateY(-15px);
+	}
 }
 </style>
