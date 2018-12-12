@@ -61,22 +61,22 @@
 
 				<div class="hero-body">
 					<div class="container has-text-centered">
-						<div class="column is-8 is-offset-2">
+						<div class="column is-10 is-offset-1">
 							<span class="title is-1" style="font-size:5rem; color:#47CCFB; font-family: 'Prompt', sans-serif;">
 								ECHO
 							</span>
 							<span style="font-size: 2rem; font-family: 'Bai Jamjuree', sans-serif; color:white">we're coming Soon</span><br>
 							<hr>
 							<span class="title is-2" style="color:white; font-family: 'Bai Jamjuree', sans-serif;">
-								แหล่งรวมช่างภาพแห่งใหม่ของประเทศไทย
+								Community สำหรับช่างภาพแห่งใหม่ของประเทศไทย
 							</span>
 
 							<p style="font-size:1.5rem; font-family: 'Bai Jamjuree', sans-serif; color:white; margin-top:2rem">
-								สร้างความเป็นระบบให้กับการเป็นช่างภาพ รวมถึงการจ้างงานและหางาน โดยที่เราช่วยอำนวยความสะดวกให้กับทั้งช่างภาพและผู้ว่าจ้าง เพื่อให้งานที่จะเกิดขึ้นนั้นเกิดความประทับใจสูงสุด
+								เพื่อแลกเปลี่ยนความรู้ แชร์ประสบการณ์กับคนที่รักการถ่ายภาพคุณ <br> และเพิ่มโอกาสการได้งานด้วยเทคโนโลยี <strong style="color:white;"> ECHO Match</strong>
 							</p>
 							<div style="padding-top:2rem;">
-								<button @click="scrollDown('Photographer')" class="button white" style="font-family: 'Bai Jamjuree', sans-serif;">สมัครเป็นช่างภาพ</button>
-								<button @click="scrollDown('Customer')" class="button white" style="font-family: 'Bai Jamjuree', sans-serif;">ต้องการหาช่างภาพ</button>
+								<button @click="scrollDown('Photographer')" class="button white" style="font-family: 'Bai Jamjuree', sans-serif;">ลงทะเบียนเลย</button>
+								<!-- <button @click="scrollDown('Customer')" class="button white" style="font-family: 'Bai Jamjuree', sans-serif;">ต้องการหาช่างภาพ</button> -->
 							</div>
 
 							<div style="margin-top:5rem" class="bounce">
@@ -176,12 +176,11 @@
 				</div>
 			</div>
 
-			<div id="customer-features" style="background-color:#DEF7F3; padding:2rem 5rem 2rem 5rem">
+			<!-- <div id="customer-features" style="background-color:#DEF7F3; padding:2rem 5rem 2rem 5rem">
 				<div class="columns is-centered">
 					<div class="column" style="font-family: 'Bai Jamjuree', sans-serif;">
 						<tr style=" height: 3rem">
 							<p style="font-family: 'Prompt', sans-serif;" class="title is-4">สำหรับผู้ว่างจ้าง</p>
-							<!-- ให้ผู้ว่าจ้างเข้ามาค้นหาช่างภาพที่มีตั้งแต่ระดับฝึกหัดจนถึงระดับมืออาชีพ -->
 						</tr>
 						<div class="feature_div2" :class="{feature_highlight2: customerImgPath == 1 ? true : false}">
 							<tr @mouseover="featureHover('customer', 1)">
@@ -227,7 +226,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 			<!-- <div class="tile is-vertical is-parent">
           <div
@@ -470,12 +469,12 @@
 				<div class="column" style="padding:4rem; background-color:#DEF7F3">
 					<div style="text-align:center;margin-bottom:2rem">
 						<span class="title is-4" style="margin-bottom:2rem; font-family: 'Prompt', sans-serif; ">
-							ลงทะเบียนและรับสิทธิพิเศษของคุณได้เลย
+							ลงทะเบียน
 						</span>
-						<br>
+						<!-- <br>
 						<span class="title is-4" style="margin-bottom:2rem; font-family: 'Prompt', sans-serif; ">
 							พิเศษสำหรับ 100 คนแรกเท่านั้น
-						</span>
+						</span> -->
 
 					</div>
 					<!-- Begin Mailchimp Signup Form -->
@@ -495,7 +494,7 @@
 									<label for="mce-PHONE">Phone Number </label>
 									<input type="text" name="PHONE" class="input" value="" id="mce-PHONE">
 								</div>
-								<div class="mc-field-group input-group">
+								<!-- <div class="mc-field-group input-group">
 									<strong>I am a ... </strong>
 									<div class="control">
 										<label class="radio">
@@ -507,7 +506,7 @@
 											Customer
 										</label>
 									</div>
-								</div>
+								</div> -->
 								<div id="mce-responses" class="clear">
 									<div class="response" id="mce-error-response" style="display:none"></div>
 									<div class="response" id="mce-success-response" style="display:none"></div>
@@ -655,7 +654,7 @@ body {
 }
 .hero.is-info {
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-		url("./assets/hero3.jpg") no-repeat center center fixed;
+		url("assets/hero3.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
